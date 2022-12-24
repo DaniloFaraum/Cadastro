@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap');
+
+*{
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+body{
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #EAFDFC;
+}
+
+main{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    background-color:#91D8E4;
+    padding: 10vh 150px;
+    margin-top: 20vh;
+    border-radius: 20px;
+    row-gap: 20px;
+}
+
+.title{
+    align-self: flex-start;
+}
+
+.fields{
+    row-gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+button{
+    transition: all 0.5s;
+    border-radius: 10px;
+    height: 5vh;
+    background-color: #82AAE3;
+    border: none;
+    font-size: 20px;
+}
+
+button:hover{
+    transform: translateY(-3px);
+}
+
+button:active{
+    transform: translateY(0);
+}
+
+.error{
+    color: red;
+}
+
+.campos{
+    width: 200px;
+    height: 5vh;
+    border-radius: 10px;
+    border-color: #91D8E4;
+}
+.waves{
+    padding-top: 57vh;
+    z-index: -1;
+    width: 100vw;
+}
+@media(max-width:768px){
+
+   main{
+    margin-top: 15vh;
+    padding: 15vh 50px; 
+   }
+   .waves{
+    padding-top: 90vh;
+    z-index: -1;
+}
+}
